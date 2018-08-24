@@ -1,0 +1,82 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int Numero1, Numero2;
+    
+    cout<<"Ingresa el numero";
+    cin>>Numero1;
+    cout<<"Ingresa el segundo numero";
+    cin>>Numero2;
+    
+    if(Numero1%Numero2==0)
+        cout<<"Es multiplo";
+    else
+        cout<<"No es multiplo";
+
+}
+
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+  int Numero, Decenas, Centenas, Umillar, Dmillar;
+  
+     cout<<"Introduce el numero\t";
+     cin>>Numero;
+  
+  if(Numero>9999&&Numero<=99999)
+  {
+      Dmillar=Numero/10000;
+      Numero=Numero%10000;
+      
+      Umillar=Numero/1000;
+      Numero=Numero%1000;
+      
+      Centenas=Numero/100;
+      Numero=Numero%100;
+      
+      Decenas=Numero/10;
+      Numero=Numero%10;
+      
+      cout<<endl<<Dmillar<<"\t"<<Umillar<<"\t"<<Centenas<<"\t"<<Decenas<<"\t"<<Numero;
+  }
+  
+}
+
+// Example program
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <stdlib.h> 
+using namespace std;
+int main()
+{
+		int Dida, Destancia, Pago;
+
+		cout << "Introduce la distancia de ida\t";
+		cin >> Dida;
+		cout << "Introduce los dias de estancia\t";
+		cin >> Destancia;
+
+		if ((Dida + Dida)>800 && Destancia>7)
+		{
+			Pago=(Dida+Dida)*.17;
+			Pago = Pago-(Pago*.30);
+			cout << "El costo es\t" << Pago;
+		}
+		else
+		{
+			Pago=(Dida+Dida)*.17;
+			cout << "El costo es\t" << Pago;
+		}
+		system("PAUSE");
+		return 0;
+	
+}
