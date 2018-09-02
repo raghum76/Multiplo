@@ -46,6 +46,7 @@ en cuenta para tal propósito lo siguiente:
 * Se debe dar como salidas las poblaciones desde el segundo año hasta que la población de “a” exceda a la población de “b”, 
 además la cantidad de años que transcurrieron para que esto sucediera
 
+
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -59,7 +60,7 @@ int main()
     cout<<"Ingresa poblacion de ciudad dos";
     cin>>ciudad2;
     
-    if(ciudad1>ciudad2)
+    if(ciudad1<ciudad2)
     {
         while(ciudad2>ciudad1)
             {
@@ -69,12 +70,14 @@ int main()
                 
             }
         cout<<"poblacion de cuidad1:"<<"\t"<<ciudad1<<endl;
-        cout<<"poblacion de cuidad2:"<<"\t"<<ciudad2;
+        cout<<"poblacion de cuidad2:"<<"\t"<<ciudad2<<endl;
+        cout<<"Años que pasaron:"<<"\t"<<anos;
     }
     else
     {
         cout<<"poblacion de cuidad1:"<<"\t"<<ciudad1<<endl;
-        cout<<"poblacion de cuidad2:"<<"\t"<<ciudad2;
+        cout<<"poblacion de cuidad2:"<<"\t"<<ciudad2<<endl;
+        cout<<"Años que pasaron:"<<"\t"<<anos;
     }
 }
 
