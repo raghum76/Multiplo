@@ -29,7 +29,7 @@ int main()
                 case 2:
                     cout<<"Ingrese el valor maximo";
                     cin>>maximo;
-                    cout<<"X"<<"\t"<<"f";
+                    cout<<"X"<<"\t"<<"f";//crear una funcion para tabular
                     for(x=0;x<maximo;x++)
                     {
                         res=formula1(x,funcion);
