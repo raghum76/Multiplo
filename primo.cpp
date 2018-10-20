@@ -1,4 +1,3 @@
-*******************************************************************************/
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -9,7 +8,6 @@ int main()
     int v[999];
     for(int i=0;i<1000;i++)
         v[i]=1;
-    v[2]=0;
     //Buscar subindices primos
     for(int i=2;i<1000;i++)
         for(int x=i+1;x<1000;x++)
@@ -23,6 +21,5 @@ int main()
 void imprimir(int v[])
 {
     for(int i=0;i<1000;i++)
-        cout<<"vec"<<"["<<i<<"]"<<"="<<v[i]<<endl;
-    
+        if(v[i] == 1) cout<<i<<endl;
 }
