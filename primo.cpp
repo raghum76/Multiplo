@@ -10,9 +10,10 @@ int main()
         v[i]=1;
     //Buscar subindices primos
     for(int i=2;i<1000;i++)
-        for(int x=i+1;x<1000;x++)
-            if (x%i==0)
-                v[x]=0;
+            if(v[i]==1)
+                for(int x=i+1;x<1000;x++)
+                    if (x%i==0)
+                        v[x]=0;
     //Imprimir el vector
     imprimir(v);
 
