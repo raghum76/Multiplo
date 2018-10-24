@@ -17,7 +17,7 @@ void comprimir(int vec[],int tam)
     {
         if(vec[i]==vec[i+1])
         {
-            vec[i+1]=-1;
+            vec[i+1]=-1;//en lugar de esto lo mejor sería llama la función para eliminar un numero, recorrer y mover todo una posicion.
         }
     }
     for(int i=0;i<tam-1;i++)
